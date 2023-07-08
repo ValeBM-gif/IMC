@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_412_PR04.PaginaFem"
+             IconImageSource="mujer.png">
+    <FlexLayout Direction="Column">
+        <Label
+            Text="IMC"
+            FontSize="Title"
+            TextColor="White"
+            
+            BackgroundColor="#b690c2"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            />
+        <FlexLayout FlexLayout.Grow="3">
+            <FlexLayout FlexLayout.Grow="2" Direction="Column">
+                <Image Source="nina.png"
+                       Margin="20"
+                       FlexLayout.Grow="1"
+                   />
+
+                <Grid ColumnDefinitions=".5*, .5*" RowDefinitions=".25*, .25*, .25*, .25*" FlexLayout.Grow="2">
+                    <Label
+                        FontSize="Title"
+                        SemanticProperties.HeadingLevel="Level1"
+                        Margin="5,50"
+
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+
+                        HorizontalOptions="End"
+                        VerticalOptions="Center"
+
+                        FlexLayout.Grow="1"
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        >Ingresa talla:</Label>
+                <Entry
+                    x:Name="txtTallaF"
+                    Placeholder="En metros"
+                    FontSize="20"
+                    Margin="5,50"
+                    
+
+                    HeightRequest="50"
+                    WidthRequest="170"
+
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    />
+                    <Label
+                        FontSize="Title"
+                        SemanticProperties.HeadingLevel="Level1"
+                        Margin="5,50"
+
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+
+                        HorizontalOptions="End"
+                        VerticalOptions="Center"
+
+                        FlexLayout.Grow="1"
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        >Ingresa peso:</Label>
+                    <Entry
+                        x:Name="txtPesoF"
+                        Placeholder="En kilos"
+                        FontSize="20"
+                        Margin="5,50"
+
+                        HeightRequest="50"
+                        WidthRequest="180"
+
+                        HorizontalOptions="Start"
+                        VerticalOptions="Center"
+
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        />
+                    <Button
+                    Text="Calcular"
+                    FontSize="Large"
+                    x:Name="btnCalcularIMCFem"
+                    Margin="0,0,0,100"
+
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+
+                    Clicked="btnCalcularIMCFem_Clicked"
+
+                    />
+                    <Label
+                        x:Name="lblResFem"
+                        FontSize="Subtitle"
+                        SemanticProperties.HeadingLevel="Level1"
+                        Margin="50, 50, 50, 70"
+
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+
+                        FlexLayout.Grow="1"
+                        Grid.Column="0"
+                        Grid.Row="3"
+                        Grid.ColumnSpan="2"
+                        >Resultado...</Label>
+
+                </Grid>
+                
+            </FlexLayout>
+            
+
+            <BoxView FlexLayout.Basis="50"
+                     FlexLayout.Order="-1"
+                     Color="#b690c2">
+            </BoxView>
+            <BoxView FlexLayout.Basis="50"
+                     FlexLayout.Order="1"
+
+                     Color="#b690c2">
+            </BoxView>
+        </FlexLayout>
+           <FlexLayout FlexLayout.Grow=".3" >
+               <Grid ColumnDefinitions=".5*, .5*" RowDefinitions=".9*,.5*" FlexLayout.Grow="1" BackgroundColor="#b690c2">
+                   <Image Source="salle.png"
+                   WidthRequest="250"
+                   HeightRequest="50"
+                   Margin="-40, 15, 20, 20"
+
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start"
+
+                   Grid.Column="0"
+                   Grid.Row="0"
+                />
+                
+                <Label
+                    Text="Universidad La Salle Bajío"
+                    FontSize="Large"
+                    
+                    HeightRequest="50"
+                    TextColor="White"
+                    Margin="-50, 16, 20, 20"
+
+                    HorizontalTextAlignment="End"
+                    VerticalTextAlignment="Center"
+
+                    FlexLayout.Grow="1"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    >
+                </Label>
+
+               </Grid>
+           </FlexLayout>
+                
+                
+                
+
+
+    </FlexLayout>
+</ContentPage>

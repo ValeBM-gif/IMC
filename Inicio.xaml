@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_412_PR04.Inicio"
+             IconImageSource="manzana.png">
+    <FlexLayout Direction="Column">
+        <Label
+            Text="IMC"
+            FontSize="36"
+            
+            BackgroundColor="#F0697C"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="End"
+            />
+        <FlexLayout FlexLayout.Grow="3" Direction="Column">
+                <Image
+                    HeightRequest="200"
+                    Source="balanza.png"
+                    FlexLayout.Grow="2"
+                    />
+                <Label Text="Selecciona una opción"
+                       FontSize="Title"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Start"
+                       FlexLayout.Grow="1"
+                       />
+        </FlexLayout>
+    </FlexLayout>
+</ContentPage>
